@@ -1,0 +1,45 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+
+@layer components {
+  .screen {
+    @apply w-screen h-screen flex justify-center items-center bg-blue-200;
+  }
+  .paper {
+    @apply bg-white shadow-2xl rounded-lg border p-10;
+  }
+  .h1 {
+    @apply text-center pb-5 text-xl;
+  }
+  .alert-info {
+    @apply bg-green-200 border-green-600 text-green-800;
+  }
+  .alert-error {
+    @apply bg-red-200 border-red-600 text-red-800;
+  }
+  .alert-warning {
+    @apply bg-yellow-200 border-yellow-600 text-yellow-800;
+  }
+  .btn-info {
+    @apply bg-green-200 hover:bg-green-100 p-5 rounded text-black focus:outline-none;
+  }
+  .btn-error {
+    @apply bg-red-200 hover:bg-red-100 p-5 rounded text-black focus:outline-none;
+  }
+  .btn-warning {
+    @apply bg-yellow-200 hover:bg-yellow-100 p-5 rounded text-black focus:outline-none;
+  }
+}
